@@ -17,9 +17,9 @@ All examples are found in the **examples** folder. They include:
   - PCB design fits perfectly into included enclosure which can be 3D printed if desired.
 
 ## Display Power
-The display is powered by the P1S3 pin on the P1 Module. Connecting the display directly to the 3.3V rail would create a constant current draw even with the display is put into hibernate mode. By connecting the display's power rail to an IO pin on the P1 module we can get 0 power draw from the display when not in use. Since the display is e-paper it can hold it's display while drawing **zero power**.
+The display is powered by the P1S3 pin on the P1 Module. Connecting the display directly to the 3.3V rail would create a constant current draw even when the display is put into hibernate mode. By connecting the display's power rail to an IO pin on the P1 module we can get zero power draw from the display when not in use. Since the display is e-paper it can hold it's display while drawing **zero power**.
 
-To turn the display on in firmware simple do:
+To turn the display on in firmware:
 
 ```c
 pinMode(P1S3, OUTPUT);
